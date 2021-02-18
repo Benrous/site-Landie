@@ -1,0 +1,168 @@
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+@media all and (min-width: 1024px)  { 
+    .menu {
+        display: none;
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    .menu {
+        display: none;
+    }
+ }
+
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+    .menu {
+        display: none;
+    }
+    .contentBlock {
+        justify-content: center !important;
+    }
+
+    .firstPicture {
+        position: absolute;
+        z-index: -1;
+        top: 1879px;
+        right: 0;
+        width: 50% !important;
+
+    }
+
+    .thirtyBlock {
+        margin-top: 50%;
+    }
+    
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+
+    .menu {
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
+  
+    .details {
+        align-items: center;
+    }
+    .contentBlock {
+        justify-content: center !important;
+    }
+    .firstPicture {
+        position: absolute;
+        z-index: -1;
+        top: 1879px;
+        right: 0;
+        width: 50% !important;
+
+    }
+    .thirtyBlock {
+        margin-top: 50%;
+    }
+    .text {
+        font-size: 1.2em!important;
+        line-height: 30px;
+        color: #505F98;
+    }
+    .title {
+        font-size: 2em !important;
+    }
+    .contentBlock > .leftBlock {
+        max-width: 100% !important;
+        margin: 0 5px;
+    }
+    button {
+        padding: 15px 70px !important;
+    }
+    .buttonBlock {
+       justify-content: center;
+    }
+}
+
+@media all and (max-width: 480px) { 
+
+    .menu {
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
+    #buy {
+        display: none;
+    }
+    .details {
+        align-items: center;
+    }
+    .introIMG {
+        display: none;
+    }
+  
+    .firstPicture {
+        display: none;
+    }
+    .thirtyBlock {
+        margin-top: 50%;
+    }
+    .text {
+        font-size: 1.2em!important;
+        line-height: 30px;
+        color: #505F98;
+    }
+    .title {
+        font-size: 2em !important;
+    }
+    .contentBlock > .leftBlock {
+        max-width: 100% !important;
+        margin: 0 5px;
+    }
+    button {
+        padding: 15px 70px !important;
+    }
+    .buttonBlock {
+       justify-content: center;
+    }
+    
+}
+
+
+/* Portrait */
+@media screen and (orientation:portrait) { /* Portrait styles here */ }
+/* Landscape */
+@media screen and (orientation:landscape) { /* Landscape styles here */ }
+
+
+/* CSS for iPhone, iPad, and Retina Displays */
+
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+}
+
+/* iPhone Portrait */
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+} 
+
+/* iPhone Landscape */
+@media screen and (max-device-width: 480px) and (orientation:landscape) {
+}
+
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation:portrait) {
+}
+
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation:landscape) {
+}
